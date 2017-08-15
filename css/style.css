@@ -1,23 +1,44 @@
 body {
   margin: 0;
   height: 100vh; }
-  body .hotel-logo {
+  body header .hotel-logo {
     margin-left: auto;
     margin-right: auto;
     width: 280px;
     display: inline-block;
     text-align: center;
     line-height: 50px; }
-  body #bs-example-navbar-collapse-1 a {
+  body header .nav.navbar-nav.navbar-left #square-border {
+    transition: background .5s ease-in-out;
+    -o-transition: background .5s ease-in-out;
+    -ms-transition: background .5s ease-in-out;
+    -moz-transition: background .5s ease-in-out;
+    -webkit-transition: background .5s ease-in-out; }
+  body header .navbar-default .navbar-nav li a {
+    transition: background .5s ease-in-out;
+    -o-transition: background .5s ease-in-out;
+    -ms-transition: background .5s ease-in-out;
+    -moz-transition: background .5s ease-in-out;
+    -webkit-transition: background .5s ease-in-out; }
+  body header .nav.navbar-nav.navbar-left #square-border:hover {
+    background-color: #d4d8dd; }
+  body header .navbar-default .navbar-nav li a:hover {
+    background-color: #d4d8dd; }
+  body header #bs-example-navbar-collapse-1 a {
     color: #1a1414; }
-  body ul.nav.navbar-nav.navbar-left {
+  body header ul.nav.navbar-nav.navbar-left {
     margin-left: -30px; }
-    body ul.nav.navbar-nav.navbar-left li {
+    body header ul.nav.navbar-nav.navbar-left li {
       line-height: 50px; }
-    body ul.nav.navbar-nav.navbar-left img {
+    body header ul.nav.navbar-nav.navbar-left li#lang {
+      background-image: url(../img/prostokat5.png);
+      background-repeat: no-repeat;
+      background-size: contain;
+      background-position: center; }
+    body header ul.nav.navbar-nav.navbar-left img {
       height: 40px;
       padding-right: 10px; }
-    body ul.nav.navbar-nav.navbar-left #square-border {
+    body header ul.nav.navbar-nav.navbar-left #square-border {
       margin-top: 5px;
       margin-right: 30px;
       width: 40px;
@@ -26,13 +47,13 @@ body {
       background-size: contain;
       line-height: 40px;
       text-align: center; }
-      body ul.nav.navbar-nav.navbar-left #square-border a {
+      body header ul.nav.navbar-nav.navbar-left #square-border a {
         text-decoration: none; }
-  body ul.nav.navbar-nav.navbar-center {
+  body header ul.nav.navbar-nav.navbar-center {
     width: 300px;
     line-height: 50px;
     padding-left: 100px; }
-  body #navigation {
+  body header #navigation {
     font-family: 'Raleway', sans-serif;
     font-size: 12px;
     font-weight: 800; }

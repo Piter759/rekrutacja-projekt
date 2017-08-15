@@ -2,6 +2,8 @@
 <html lang="pl">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Hotel ****</title>
     <link href="https://fonts.googleapis.com/css?family=Raleway:400,800" rel="stylesheet">
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
@@ -9,11 +11,8 @@
     <link rel="stylesheet" href="css/responsive.css">
 </head>
 <body>
-
-    <!--<div class="container-fluid">
-
-        <div class="row">
--->
+       
+        <header>
             <nav id="navigation" class="navbar navbar-default navbar-fixed-top">
                 <div id="menu-wide" class="container">
 
@@ -24,24 +23,72 @@
                                 <span class="icon-bar"></span>
                                 <span class="icon-bar"></span>
                             </button>
+                        <div id="lang-mobile">
+                            <li class="dropdown dropdown-submenu no-decoration"><a href="#" class="dropdown-toggle text-uppercase" data-toggle="dropdown">PL</a>
+                                <ul class="dropdown-menu">
+                                    <div><a href="#" class="text-uppercase">pl</a></div>
+                                    <div><a href="#" class="text-uppercase">en</a></div>
+                                    <div><a href="#" class="text-uppercase">de</a></div>
+                                </ul>
+                            </li>
+                        </div>
                     </div>
 
                     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                         
                          <ul class="nav navbar-nav navbar-left">
-                            <li><div id="square-border"><a href="#" class="text-uppercase">pl</a></div></li>
-                            <li class="dropdown dropdown-submenu"><a href="#" class="dropdown-toggle text-uppercase" data-toggle="dropdown">hotel</a>
+                           
+                            <li id="lang" class="dropdown dropdown-submenu"><a href="#" class="dropdown-toggle text-uppercase left-padd" data-toggle="dropdown">pl</a>
                                 <ul class="dropdown-menu">
-                                    <li><a href="#">Pokoje 1 os.</a></li>
-                                    <li><a href="#">Pokoje 2 os.</a></li>
-                                    <li><a href="#">Pokoje 3 os.</a></li>
-                                    <li><a href="#">Apartamenty</a></li>
+                                    <li>
+                                        <div id="square-border"><a href="#" id="border" class="text-uppercase">pl</a></div>
+                                    </li>
+                                    <li>
+                                        <div id="square-border"><a href="#" id="border" class="text-uppercase">en</a></div>
+                                    </li>
+                                    <li>
+                                        <div id="square-border"><a href="#" id="border" class="text-uppercase">de</a></div>
+                                    </li>
                                 </ul>
                             </li>
-                            <li><a href="#" class="text-uppercase">pokoje</a></li>
-                            <li><a href="#" class="text-uppercase">pakiety</a></li>
-                            <li><a href="#" class="text-uppercase">spa</a></li>
-                            <li><a href="#" class="text-uppercase">restauracja</a></li>
+                             
+                            <li class="dropdown dropdown-submenu"><a href="#" class="dropdown-toggle text-uppercase left-padd" data-toggle="dropdown">hotel</a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="#" class="text-capitalize">okolice</a></li>
+                                    <li><a href="#" class="text-capitalize">standard</a></li>
+                                    <li><a href="#" class="text-capitalize">usprawnienia</a></li>
+                                    <li><a href="#" class="text-capitalize">usługi</a></li>
+                                </ul>
+                            </li>
+                            <li class="dropdown dropdown-submenu"><a href="#" class="dropdown-toggle text-uppercase left-padd" data-toggle="dropdown">pokoje</a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="#" class="text-capitalize">pokoje</a></li>
+                                    <li><a href="#" class="text-capitalize">mieszkania</a></li>
+                                    <li><a href="#" class="text-capitalize">apartamenty</a></li>
+                                </ul>
+                            </li>
+                            <li class="dropdown dropdown-submenu"><a href="#" class="dropdown-toggle text-uppercase left-padd" data-toggle="dropdown">pakiety</a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="#" class="text-capitalize">pakiet a</a></li>
+                                    <li><a href="#" class="text-capitalize">pakiet b</a></li>
+                                    <li><a href="#" class="text-capitalize">pakiet c</a></li>
+                                </ul>
+                            </li>
+                            <li class="dropdown dropdown-submenu"><a href="#" class="dropdown-toggle text-uppercase left-padd" data-toggle="dropdown">spa</a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="#" class="text-capitalize">sauna</a></li>
+                                    <li><a href="#" class="text-capitalize">solarium</a></li>
+                                    <li><a href="#" class="text-capitalize">masaże</a></li>
+                                    <li><a href="#" class="text-capitalize">jaccuzi</a></li>
+                                </ul>
+                            </li>
+                            <li class="dropdown dropdown-submenu"><a href="#" class="dropdown-toggle text-uppercase left-padd" data-toggle="dropdown">restauracja</a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="#" class="text-capitalize">menu</a></li>
+                                    <li><a href="#" class="text-capitalize">obsługa</a></li>
+                                    <li><a href="#" class="text-capitalize">rezerwacje</a></li>
+                                </ul>
+                            </li>
                         </ul>
                         
                         <ul class="nav navbar-nav navbar-center">
@@ -49,10 +96,36 @@
                         </ul>
                         
                         <ul class="nav navbar-nav navbar-right">
-                            <li><a href="#" class="text-uppercase">galeria</a></li>
-                            <li><a href="#" class="text-uppercase">konferencja</a></li>
-                            <li><a href="#" class="text-uppercase">wesele</a></li>
-                            <li><a href="#" class="text-uppercase">kontakt</a></li>
+                           <li class="dropdown dropdown-submenu"><a href="#" class="dropdown-toggle text-uppercase none-padd" data-toggle="dropdown">galeria</a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="#" class="text-capitalize">pokoje</a></li>
+                                    <li><a href="#" class="text-capitalize">park</a></li>
+                                    <li><a href="#" class="text-capitalize">hotel</a></li>
+                                </ul>
+                            </li>
+                            <li class="dropdown dropdown-submenu"><a href="#" class="dropdown-toggle text-uppercase none-padd" data-toggle="dropdown">konferencja</a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="#" class="text-capitalize">sale</a></li>
+                                    <li><a href="#" class="text-capitalize">wi-fi</a></li>
+                                    <li><a href="#" class="text-capitalize">urządzenia</a></li>
+                                    <li><a href="#" class="text-capitalize">catering</a></li>
+                                </ul>
+                            </li>
+                            <li class="dropdown dropdown-submenu"><a href="#" class="dropdown-toggle text-uppercase none-padd" data-toggle="dropdown">wesele</a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="#" class="text-capitalize">menu</a></li>
+                                    <li><a href="#" class="text-capitalize">sale</a></li>
+                                    <li><a href="#" class="text-capitalize">orkiestra</a></li>
+                                    <li><a href="#" class="text-capitalize">obsługa</a></li>
+                                </ul>
+                            </li>
+                            <li class="dropdown dropdown-submenu"><a href="#" class="dropdown-toggle text-uppercase none-padd" data-toggle="dropdown">kontakt</a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="#" class="text-capitalize">dojazd</a></li>
+                                    <li><a href="#" class="text-capitalize">adres</a></li>
+                                    <li><a href="#" class="text-capitalize">mapa</a></li>
+                                </ul>
+                            </li>
                             <li><a href="#" class="text-uppercase"></a></li>
                         </ul>
 
@@ -60,8 +133,7 @@
 
                 </div>
             </nav>
-     <!--   </div>
-    </div>-->
+        </header>
 
             <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
             <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
