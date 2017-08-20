@@ -32,6 +32,23 @@
 
 }
 
+@media all and (max-width: 1063px) {
+    body header #header-content .col-sm-12.col-md-6.col-lg-6 #trip-advisor p#wonderful {
+        font-size: 4em;
+        margin-bottom: 0;
+    }
+    
+    body header #header-content .col-sm-12.col-md-6.col-lg-6 #trip-advisor #trip-opinion p#opinion {
+        font-size: 1.4em;
+        padding-right: 0;
+    }
+    
+    body header #header-content .col-sm-12.col-md-6.col-lg-6 #trip-advisor #trip-opinion figure {
+        bottom: 0;
+        left: 0;
+    }
+}
+
 @media all and (min-width: 768px) and (max-width: 991px) {
     
     li#lang {
@@ -40,9 +57,122 @@
     
     body header ul.nav.navbar-nav.navbar-center {
            display: none;
-           
     }
     
+}
+
+@media all and (max-width: 991px) {
+    
+    body header #header-content .col-sm-12.col-md-6.col-lg-6 #trip-advisor p#wonderful {
+        font-size: 4em;
+        margin-bottom: 0;
+    }
+    body header #header-content .col-sm-12.col-md-6.col-lg-6 #trip-advisor p#opinion {
+        font-size: 1.4em;
+        margin-bottom: 20px;
+    }
+    
+    body header #header-content .col-sm-12.col-md-6.col-lg-6 #trip-advisor #trip-opinion figure {
+        bottom: 0;
+        left: -5px;
+    }
+        
+    body header #header-content .col-sm-12.col-md-3.col-lg-3.reservations {
+        top: 150px;
+        padding-left: 0;
+    }
+    
+    body header #header-content .col-sm-12.col-md-6.col-lg-6 {
+        top: 130px;
+    }
+    
+    body header #header-content .col-sm-12.col-md-3.col-lg-3 {
+        top: 90px;
+    }
+    body header #header-content .col-sm-12.col-md-3.col-lg-3 #hotel-evaluate {
+        left: 50%;
+        transform: translateX(-50%);
+        margin-left: 0;
+    }
+
+    /*Slider responsive*/
+    
+#packets {
+    height: 300px;
+}
+
+.slider {
+    margin-top: -50px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    overflow: hidden;
+    width: 950px;
+}
+
+#prev {
+    padding-top: 20px;
+    top: 350px;
+    left: 430px;
+    display: inline-block;
+    position: relative;
+    width: 50px;
+}
+
+.main_container {
+    width: 230px;
+    display: block;
+    margin: 0 auto;
+    height: 300px;
+    align-self: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.long_container {
+    height: 100%;
+}
+
+item-cover {
+    margin-bottom: 50px;
+    height: 350px;
+    display: block;
+    width: 240px;
+}
+.see_next {
+    top: 0;
+    left: 480px;
+    display: inline-block;
+    position: relative;
+}
+
+#one {
+    width: 250px !important;
+}
+#two {
+    width: 250px !important;
+}
+#three {
+    width: 250px !important;
+}
+#four {
+    width: 250px !important;
+}
+#five {
+    width: 250px !important;
+}
+#six {
+    width: 250px !important;
+}
+#seven {
+    width: 250px !important;
+}
+#eight {
+    width: 250px !important;
+}
+#nine {
+    width: 250px !important;
+}
 }
 @media all and (max-width: 767px) {
     ul.nav.navbar-nav.navbar-center {
@@ -109,6 +239,27 @@
     }
     .navbar-header a, a:hover {
         text-decoration: none;
+    }   
+}
+
+@media all and (max-width: 560px) {
+    body header #header-content .col-sm-12.col-md-6.col-lg-6 #trip-advisor p#wonderful {
+        font-size: 2em;
+        margin-bottom: 0;
+    }
+    body header #header-content .col-sm-12.col-md-6.col-lg-6 #trip-advisor #trip-opinion p#opinion {
+        font-size: 1em;
+        margin-bottom: 0;
     }
     
+    body header #header-content .col-sm-12.col-md-6.col-lg-6 #trip-advisor #trip-opinion figure {
+        bottom: -10px;
+        left: -5px;
+    }
+    
+    body header #header-content .col-sm-12.col-md-3.col-lg-3.reservations {
+        top: 150px;
+        padding-left: 0;
+    }
+
 }
