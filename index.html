@@ -2,18 +2,20 @@
 <html lang="pl">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Hotel ****</title>
-    <link href="https://fonts.googleapis.com/css?family=Raleway:400,800" rel="stylesheet">
+    <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:200,200i,300,400,500,600,700,800" rel="stylesheet">
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/slider.css">
+    <link rel="stylesheet" href="css/slider-2.css">
     <link rel="stylesheet" href="css/responsive.css">
 </head>
 <body>
-
-    <!--<div class="container-fluid">
-
-        <div class="row">
--->
+       
+        <header>
             <nav id="navigation" class="navbar navbar-default navbar-fixed-top">
                 <div id="menu-wide" class="container">
 
@@ -24,24 +26,72 @@
                                 <span class="icon-bar"></span>
                                 <span class="icon-bar"></span>
                             </button>
+                        <div id="lang-mobile">
+                            <li class="dropdown dropdown-submenu no-decoration"><a href="#" class="dropdown-toggle text-uppercase" data-toggle="dropdown">PL</a>
+                                <ul class="dropdown-menu">
+                                    <div><a href="#" class="text-uppercase">pl</a></div>
+                                    <div><a href="#" class="text-uppercase">en</a></div>
+                                    <div><a href="#" class="text-uppercase">de</a></div>
+                                </ul>
+                            </li>
+                        </div>
                     </div>
 
                     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                         
                          <ul class="nav navbar-nav navbar-left">
-                            <li><div id="square-border"><a href="#" class="text-uppercase">pl</a></div></li>
-                            <li class="dropdown dropdown-submenu"><a href="#" class="dropdown-toggle text-uppercase" data-toggle="dropdown">hotel</a>
+                           
+                            <li id="lang" class="dropdown dropdown-submenu"><a href="#" class="dropdown-toggle text-uppercase left-padd" data-toggle="dropdown">pl</a>
                                 <ul class="dropdown-menu">
-                                    <li><a href="#">Pokoje 1 os.</a></li>
-                                    <li><a href="#">Pokoje 2 os.</a></li>
-                                    <li><a href="#">Pokoje 3 os.</a></li>
-                                    <li><a href="#">Apartamenty</a></li>
+                                    <li>
+                                        <div id="square-border"><a href="#" id="border" class="text-uppercase">pl</a></div>
+                                    </li>
+                                    <li>
+                                        <div id="square-border"><a href="#" id="border" class="text-uppercase">en</a></div>
+                                    </li>
+                                    <li>
+                                        <div id="square-border"><a href="#" id="border" class="text-uppercase">de</a></div>
+                                    </li>
                                 </ul>
                             </li>
-                            <li><a href="#" class="text-uppercase">pokoje</a></li>
-                            <li><a href="#" class="text-uppercase">pakiety</a></li>
-                            <li><a href="#" class="text-uppercase">spa</a></li>
-                            <li><a href="#" class="text-uppercase">restauracja</a></li>
+                             
+                            <li class="dropdown dropdown-submenu"><a href="#" class="dropdown-toggle text-uppercase left-padd" data-toggle="dropdown">hotel</a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="#" class="text-capitalize">okolice</a></li>
+                                    <li><a href="#" class="text-capitalize">standard</a></li>
+                                    <li><a href="#" class="text-capitalize">usprawnienia</a></li>
+                                    <li><a href="#" class="text-capitalize">usługi</a></li>
+                                </ul>
+                            </li>
+                            <li class="dropdown dropdown-submenu"><a href="#" class="dropdown-toggle text-uppercase left-padd" data-toggle="dropdown">pokoje</a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="#" class="text-capitalize">pokoje</a></li>
+                                    <li><a href="#" class="text-capitalize">mieszkania</a></li>
+                                    <li><a href="#" class="text-capitalize">apartamenty</a></li>
+                                </ul>
+                            </li>
+                            <li class="dropdown dropdown-submenu"><a href="#" class="dropdown-toggle text-uppercase left-padd" data-toggle="dropdown">pakiety</a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="#" class="text-capitalize">pakiet a</a></li>
+                                    <li><a href="#" class="text-capitalize">pakiet b</a></li>
+                                    <li><a href="#" class="text-capitalize">pakiet c</a></li>
+                                </ul>
+                            </li>
+                            <li class="dropdown dropdown-submenu"><a href="#" class="dropdown-toggle text-uppercase left-padd" data-toggle="dropdown">spa</a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="#" class="text-capitalize">sauna</a></li>
+                                    <li><a href="#" class="text-capitalize">solarium</a></li>
+                                    <li><a href="#" class="text-capitalize">masaże</a></li>
+                                    <li><a href="#" class="text-capitalize">jaccuzi</a></li>
+                                </ul>
+                            </li>
+                            <li class="dropdown dropdown-submenu"><a href="#" class="dropdown-toggle text-uppercase left-padd" data-toggle="dropdown">restauracja</a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="#" class="text-capitalize">menu</a></li>
+                                    <li><a href="#" class="text-capitalize">obsługa</a></li>
+                                    <li><a href="#" class="text-capitalize">rezerwacje</a></li>
+                                </ul>
+                            </li>
                         </ul>
                         
                         <ul class="nav navbar-nav navbar-center">
@@ -49,10 +99,36 @@
                         </ul>
                         
                         <ul class="nav navbar-nav navbar-right">
-                            <li><a href="#" class="text-uppercase">galeria</a></li>
-                            <li><a href="#" class="text-uppercase">konferencja</a></li>
-                            <li><a href="#" class="text-uppercase">wesele</a></li>
-                            <li><a href="#" class="text-uppercase">kontakt</a></li>
+                           <li class="dropdown dropdown-submenu"><a href="#" class="dropdown-toggle text-uppercase none-padd" data-toggle="dropdown">galeria</a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="#" class="text-capitalize">pokoje</a></li>
+                                    <li><a href="#" class="text-capitalize">park</a></li>
+                                    <li><a href="#" class="text-capitalize">hotel</a></li>
+                                </ul>
+                            </li>
+                            <li class="dropdown dropdown-submenu"><a href="#" class="dropdown-toggle text-uppercase none-padd" data-toggle="dropdown">konferencja</a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="#" class="text-capitalize">sale</a></li>
+                                    <li><a href="#" class="text-capitalize">wi-fi</a></li>
+                                    <li><a href="#" class="text-capitalize">urządzenia</a></li>
+                                    <li><a href="#" class="text-capitalize">catering</a></li>
+                                </ul>
+                            </li>
+                            <li class="dropdown dropdown-submenu"><a href="#" class="dropdown-toggle text-uppercase none-padd" data-toggle="dropdown">wesele</a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="#" class="text-capitalize">menu</a></li>
+                                    <li><a href="#" class="text-capitalize">sale</a></li>
+                                    <li><a href="#" class="text-capitalize">orkiestra</a></li>
+                                    <li><a href="#" class="text-capitalize">obsługa</a></li>
+                                </ul>
+                            </li>
+                            <li class="dropdown dropdown-submenu"><a href="#" class="dropdown-toggle text-uppercase none-padd" data-toggle="dropdown">kontakt</a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="#" class="text-capitalize">dojazd</a></li>
+                                    <li><a href="#" class="text-capitalize">adres</a></li>
+                                    <li><a href="#" class="text-capitalize">mapa</a></li>
+                                </ul>
+                            </li>
                             <li><a href="#" class="text-uppercase"></a></li>
                         </ul>
 
@@ -60,11 +136,357 @@
 
                 </div>
             </nav>
-     <!--   </div>
-    </div>-->
+            
+            <section id="header-content">
+                <div class="container-fluid">
 
+                    <div class="row">
+
+                        <div class="col-sm-12 col-md-3 col-lg-3">
+                        
+                            <div id="hotel-evaluate">
+                                <p id="general-mark" class="mark">9 / 10</p>
+                                <p id="guest-marks" class="mark text-uppercase">ocena gości</p>
+                            </div>
+                            
+                        </div>
+
+                        <div class="col-sm-12 col-md-6 col-lg-6">
+                          
+                           <div id="trip-advisor">
+                               <p id="wonderful" class="text-uppercase text-center advertise-text">zachwycisz się</p>
+                               <div id="trip-opinion">
+                                   <p id="opinion" class="text-center advertise-text">"Jeden z naszych ulubionych hoteli w&nbsp;Beskidach."</p>
+                                   <figure><img id="owl" src="../app/img/warstwa6.png" alt="Trip Advisor logo"></figure>
+                               </div>
+                           </div>
+                            
+                        </div>
+
+                        <div class="col-sm-12 col-md-3 col-lg-3 reservations">
+                            <div id="reservations">
+                                <p id="prices-and-reservations" class="text-uppercase text-center">ceny&nbsp;i&nbsp;rezerwacja</p>
+                                <p id="warranty" class="text-uppercase text-center">gwarancja najniższej ceny</p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+        </header>
+        
+        <section id="packets">
+           
+            <h1 class="text-uppercase text-center header-common">Pakiety pobytowe</h1>
+            <h2 class="text-center header-common">Rezerwuj i oszczędzaj! Zadzwoń:  33 854 43 33</h2>
+           
+            <div class="container-fluid">
+
+                <div class="row">
+
+                    <div class="slider">
+
+                        <div id="prev" class="see_previous"><img src="img/arrow.svg" class="arrow_previous"></div>
+                        <div id="main" class="main_container">
+
+                            <div class="long_container">
+
+                                <div class="item-cover">
+                                    <div class="item" id="one">
+                                        <div class="mask"></div>
+                                        <a href="#" class="text-uppercase">
+                                            <div>zobacz</div>
+                                        </a>
+                                    </div>
+                                    <p class="text-uppercase thumb">wspaniałe wakacje 2016</p>
+                                </div>
+
+                                <div class="item-cover">
+                                    <div class="item" id="two">
+                                        <div class="mask"></div>
+                                        <a href="#" class="text-uppercase">
+                                            <div>zobacz</div>
+                                        </a>
+                                    </div>
+                                    <p class="text-uppercase thumb">wspaniałe wakacje 2016</p>
+                                </div>
+
+                                <div class="item-cover">
+                                    <div class="item" id="three">
+                                        <div class="mask"></div>
+                                        <a href="#" class="text-uppercase">
+                                            <div>zobacz</div>
+                                        </a>
+                                    </div>
+                                    <p class="text-uppercase thumb">wspaniałe wakacje 2016</p>
+                                </div>
+
+
+                                <div class="item-cover">
+                                    <div class="item" id="four">
+                                        <div class="mask"></div>
+                                        <a href="#" class="text-uppercase">
+                                            <div>zobacz</div>
+                                        </a>
+                                    </div>
+                                    <p class="text-uppercase thumb">wspaniałe wakacje 2016</p>
+                                </div>
+
+
+                                <div class="item-cover">
+                                    <div class="item" id="five">
+                                        <div class="mask"></div>
+                                        <a href="#" class="text-uppercase">
+                                            <div>zobacz</div>
+                                        </a>
+                                    </div>
+                                    <p class="text-uppercase thumb">wspaniałe wakacje 2016</p>
+                                </div>
+
+
+                                <div class="item-cover">
+                                    <div class="item" id="six">
+                                        <div class="mask"></div>
+                                        <a href="#" class="text-uppercase">
+                                            <div>zobacz</div>
+                                        </a>
+                                    </div>
+                                    <p class="text-uppercase thumb">wspaniałe wakacje 2016</p>
+                                </div>
+
+
+                                <div class="item-cover">
+                                    <div class="item" id="seven">
+                                        <div class="mask"></div>
+                                        <a href="#" class="text-uppercase">
+                                            <div>zobacz</div>
+                                        </a>
+                                    </div>
+                                    <p class="text-uppercase thumb">wspaniałe wakacje 2016</p>
+                                </div>
+
+                                <div class="item-cover">
+                                    <div class="item" id="eight">
+                                        <div class="mask"></div>
+                                        <a href="#" class="text-uppercase">
+                                            <div>zobacz</div>
+                                        </a>
+                                    </div>
+                                    <p class="text-uppercase thumb">wspaniałe wakacje 2016</p>
+                                </div>
+
+                                <div class="item-cover">
+                                    <div class="item" id="nine">
+                                        <div class="mask"></div>
+                                        <a href="#" class="text-uppercase">
+                                            <div>zobacz</div>
+                                        </a>
+                                    </div>
+                                    <p class="text-uppercase thumb">wspaniałe wakacje 2016</p>
+                                </div>
+                            </div>
+                        </div>
+                    <div id="next" class="see_next"><img src="img/arrow.svg" class="arrow_next"></div>
+                </div>   
+            </div>
+        </div>
+        
+    </section>
+           
+    <section id="rooms">
+        
+        <div class="container-fluid">
+            
+            <div class="row">
+                
+                 <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 room-container">
+                    
+                     <div class="choose-your-room">
+                            <h1 class="text-uppercase room-header">pokoje</h1>
+                            <p>Hotel **** oferuje 131 miejsc noclegowych w 57 pokojach dwu&nbsp;i&nbsp;trzyosobowych, studiach Junior&nbsp;i&nbsp;Senior oraz&nbsp;w&nbsp;luksusowym Apartamencie Prezydenckim. Cały obiekt jest&nbsp;w&nbsp;pełni klimatyzowany. Hotel jest również przystosowany do przyjęcia osób niepełnosprawnych.</p>
+                            <a href="#" class="text-uppercase">wybierz swój pokój</a>
+                         
+                     </div>
+                     
+                 </div>
+                 
+            </div>
+            
+        </div>
+        
+    </section>
+           
+    <section id="spa">
+        
+        <div class="container-fluid">
+            
+            <div class="row">
+                
+                 <div class="col-sm-6 col-md-6 col-lg-6 spa-container">
+                    
+                    <div class="slider-one-image">
+                        <ul id="slides">
+                            <li class="slide showing"></li>
+                            <li class="slide"></li>
+                            <li class="slide"></li>
+                            <li class="slide"></li>
+                            <li class="slide"></li>
+                        </ul>
+                        <button class="controls" id="pause"><i class="fa fa-pause" aria-hidden="true"></i></button>
+                    </div>
+                     
+                 </div>
+                 
+                 <div class="col-sm-6 col-md-6 col-lg-6 spa-container">
+                    
+                    <div class="spa-div">
+                            <h1 class="text-uppercase spa-header">spa</h1>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus soluta laudantium ab obcaecati. Quam suscipit qui placeat nihil dolor voluptas, nulla non dignissimos ipsa error hic vitae facilis doloremque sit.</p>
+                            <a href="#" class="text-uppercase">dowiedz się więcej</a>
+                     </div>             
+                 </div>
+            </div>
+        </div>
+        
+    </section>
+    
+    <section id="location">
+        
+        <div class="container-fluid">
+            
+            <div class="row">
+                
+                 <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 location-container">
+                    
+                     <div class="location-div">
+                            <h1 class="text-uppercase location-header">piękna lokalizacja</h1>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi nobis ullam, amet cupiditate nisi quaerat sint quo. Eos praesentium possimus, quisquam recusandae fuga numquam, eius molestiae, laboriosam mollitia deserunt quasi.</p>
+                            <a href="#" class="text-uppercase">odkryj to miejsce</a>
+                         
+                     </div>
+                     
+                 </div>
+                 
+            </div>
+            
+        </div>
+        
+    </section>
+    
+    <section id="conference">
+        
+        <div class="container-fluid">
+            
+            <div class="row">
+                
+                 <div class="col-sm-6 col-md-6 col-lg-6 conference-container">
+                    
+                    <div class="slider-one-image">
+                        <ul id="slides">
+                            <li class="slide showing"></li>
+                            <li class="slide"></li>
+                            <li class="slide"></li>
+                            <li class="slide"></li>
+                            <li class="slide"></li>
+                        </ul>
+                        <button class="controls" id="pause"><i class="fa fa-pause" aria-hidden="true"></i></button>
+                    </div>
+                     
+                 </div>
+                 
+                 <div class="col-sm-6 col-md-6 col-lg-6 conference-container">
+                    
+                    <div class="conference-div">
+                            <h1 class="text-uppercase conference-header">konferencje</h1>
+                            <p>Hotel **** to idealnie miejsce nie tylko na odpoczynek, ale również na integrację, szkolenie, event firmowy oraz konferencję. Zapewniamy profesjonalną opiekę koordynatora oraz pomoc techniczną podczas spotkania. Dysponujemy 4 nowoczesnymi, w pełni wyposażonymi salami konferencyjnymi.</p>
+                            <a href="#" class="text-uppercase">dowiedz się więcej</a>
+                     </div>             
+                 </div>
+            </div>
+        </div>
+        
+    </section>
+    
+    <section id="leisure">
+        
+        <div class="container-fluid">
+            
+            <div class="row">
+                
+                 <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 leisure-container">
+                    
+                     <div class="leisure-div">
+                            <h1 class="text-uppercase leisure-header">Wypoczynek z&nbsp;rodziną</h1>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi nobis ullam, amet cupiditate nisi quaerat sint quo. Eos praesentium possimus, quisquam recusandae fuga numquam, eius molestiae, laboriosam mollitia deserunt quasi.</p>
+                     </div>
+                     
+                 </div>
+                 
+            </div>
+            
+        </div>
+        
+    </section>
+    
+    <section id="address">
+            
+            <div class="container-fluid">
+                <div class="row">
+                    <div id="map" class="col-sm-6 col-md-6 col-lg-6 nopadding contact">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d4730.669807783198!2d19.0675723514806!3d49.721795309846286!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1spl!2spl!4v1503258480493" width="680" height="500" frameborder="0" style="border:0" allowfullscreen></iframe>
+                    </div>
+                    
+                     <div id="form" class="col-sm-6 col-md-6 col-lg-6 nopadding contact">
+                       
+                        <div id="contact-1">
+                            <div id="inner-contact">
+                                <div id="contact-form-1">
+                                    <address>HOTEL ****<br>ul. Przykładowa 23<br> 44-444 Przykład</address>
+                                    <h2 class="text-uppercase">rezerwuj bez pośredników i&nbsp;oszczędzaj!</h2>
+                                </div>
+                                
+                                <div id="contact-form-2">
+                                    <h2 class="text-uppercase">recepcja</h2>
+                                    <p>tel.: +48 33 888 77 66</p>
+                                    <p>recepcja@hotel.pl</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div id="contact-2">
+                           
+                            <div id="discount">
+                                <h2 class="text-uppercase">zamów kod rabatowy!</h2>
+                                <p>Podaj swój adres email, a otrzymasz jednorazowy kod rabatowy -10%.</p>
+                                <p>Sprawdź warunki promocji i oszczędzaj!</p>
+                                <form action="">
+                                    <input id="mail" type="email" name="your-mail"><input id="send-button" type="submit" name="send-it" class="text-uppercase" value="wyślij"><br>
+                                    <input type="checkbox" id="agreement"><label id="agreement-label" for="agreement">Akceptuję regulamin promocji</label>
+                                </form>
+                            </div>
+                        </div>
+                    </div> 
+                </div>    
+            </div>        
+    </section>
+    
+    <footer>
+        <address>tel.: +48 33 888 77 66</address>
+        <address>recepcja@hotel.pl</address>
+        <div id="back-to-top">
+            <p class="text-uppercase">powrót do góry</p>
+            <figure><img class="image" src="img/up-arrow.svg" alt=""></figure>
+        </div>
+        <figure class="thumbs" id="facebook"><img class="image" src="img/facebook-logo.svg" alt=""></figure>
+        <figure class="thumbs" id="instagram"><img class="image" src="img/instagram.svg" alt=""></figure>
+        <figure class="thumbs" id="tripadvisor"><img class="image" src="img/tripadvisor-logotype.svg" alt=""></figure>
+        <figure class="thumbs" id="holiday-check"><img class="image" src="img/aaa.svg" alt=""></figure>
+    </footer>
+    
+    
             <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
             <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
             <script src="js/main.js"></script>
+            <script src="js/foto-slider.js"></script>
 </body>
 </html>

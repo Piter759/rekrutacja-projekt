@@ -1,50 +1,679 @@
 body {
     margin: 0;
-    height: 100vh;
-    .hotel-logo {
-                 margin-left: auto;
-                 margin-right: auto;
-                 width: 280px;
-                 display: inline-block;
-                 text-align: center;
-                 line-height: 50px;
-    }
-    #bs-example-navbar-collapse-1 a {
-        color: rgb(26, 20, 20);
-    }
-    
-    ul.nav.navbar-nav.navbar-left {
-        margin-left: -30px;
-        li {
-            line-height: 50px;
-        }
-        img {
-            height: 40px;
-            padding-right: 10px;
-        }
-        #square-border {
-            margin-top: 5px;
-            margin-right: 30px;
-            width: 40px;
-            height: 40px;
-	        background-image: url('../img/prostokat5.png');
-            background-size: contain;
-            line-height: 40px;
+    height: 100%;
+    header {
+        height: 530px;
+        .hotel-logo {
+            margin-left: auto;
+            margin-right: auto;
+            width: 280px;
+            display: inline-block;
             text-align: center;
-            a {
-                text-decoration: none;
+            line-height: 50px;
+        }        
+        .nav.navbar-nav.navbar-left #square-border { 
+            transition: background .5s ease-in-out;
+            -o-transition: background .5s ease-in-out;
+            -ms-transition: background .5s ease-in-out;
+            -moz-transition: background .5s ease-in-out;
+            -webkit-transition: background .5s ease-in-out;
+        }
+        .navbar-default .navbar-nav li a {
+            transition: background .5s ease-in-out;
+            -o-transition: background .5s ease-in-out;
+            -ms-transition: background .5s ease-in-out;
+            -moz-transition: background .5s ease-in-out;
+            -webkit-transition: background .5s ease-in-out;
+        } 
+        .nav.navbar-nav.navbar-left #square-border:hover {
+            background-color: #d4d8dd;
+        }
+       .navbar-default .navbar-nav li a:hover {
+            background-color: #d4d8dd;
+       }
+        #bs-example-navbar-collapse-1 a {
+            color: rgb(26, 20, 20);
+        }
+        ul.nav.navbar-nav.navbar-left {
+            margin-left: -30px;
+            li {
+                line-height: 50px;
+            }
+            li#lang {
+	            background-image: url(../img/prostokat5.png);
+                background-repeat: no-repeat;
+                background-size: contain;
+                background-position: center;
+            }
+            img {
+                height: 40px;
+                padding-right: 10px;
+            }
+            #square-border {
+                margin-top: 5px;
+                margin-right: 30px;
+                width: 40px;
+                height: 40px;
+                background-image: url('../img/prostokat5.png');
+                background-size: contain;
+                line-height: 40px;
+                text-align: center;
+                a {
+                    text-decoration: none;
+                }
+            }
+        }
+        ul.nav.navbar-nav.navbar-center {
+            width: 300px;
+            line-height: 50px;
+            padding-left: 100px;
+        }
+        #navigation {
+            font-family: 'Raleway', sans-serif;
+            font-size: 12px;
+            font-weight: 800;
+        }
+        #header-content {
+            position: relative;
+            height: 530px;
+            background-image: url('../img/IMG_5959.png');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            .col-sm-12.col-md-3.col-lg-3 {
+                text-align: center;
+                top: 320px;
+                padding-left: 0;
+            }
+            #hotel-evaluate {
+                position: relative;
+                background-image: url('../img/prostokat12.png');
+                background-size: contain;
+                height: 100px;
+                width: 100px;
+                text-align: center;
+                margin-left: 30px;
+                
+                .mark {
+                    font-family: 'Raleway';
+                    background-color: transparent;
+                    color: rgb(255, 255, 255);
+                }
+                #general-mark {
+                    font-weight: 700;
+                    font-size: 1.2em;
+                    margin-bottom: 0;
+                    margin-top: 10px;
+                    padding-top: 15px;
+                }
+                #guest-marks {
+                    font-weight: 500;
+                    font-size: 1em;
+                }
+            }
+            .col-sm-12.col-md-6.col-lg-6 {
+                top: 280px;
+                #trip-advisor {
+                    position: relative;
+                    text-align: center;
+                    .advertise-text {
+                        color: rgb(255, 255, 255);
+                        font-family: 'Raleway';
+                        text-shadow: 1px 1px 5px #000;
+                    }
+                    p#wonderful {
+                        font-size: 4.3em;
+                        font-weight: 200;
+                    }   
+                    #trip-opinion {
+                        display: inline-block;
+                        p#opinion {
+                            font-size: 1.6em;
+                            font-weight: 200;
+                            font-style: italic;
+                            padding-right: 30px;
+                        }
+                        figure {
+                            display: inline-block;
+                            position: relative;
+                            left: 250px;
+                            bottom: 42px;
+                            img#owl {
+                                width: 33px;
+                                height: 33px;
+                            }
+                        }
+                    }
+                }
+            }
+            .col-sm-12.col-md-3.col-lg-3.reservations {
+                top: 100px;
+                padding-right: 0;
+                #reservations {
+                    margin-right: 0;
+	                background-color: rgb(132, 31, 31);
+                    padding: 10px;
+                    transition: background .5s ease-in-out;
+                    -o-transition: background .5s ease-in-out;
+                    -ms-transition: background .5s ease-in-out;
+                    -moz-transition: background .5s ease-in-out;
+                    -webkit-transition: background .5s ease-in-out;
+                    .text-uppercase {
+	                    color: rgb(255, 255, 255);
+                        font-family: 'Raleway';
+                    }
+                    #prices-and-reservations {
+	                    font-size: 1.2em;
+                        font-weight: 800;
+                        margin-bottom: 0;
+                        letter-spacing: 1px;
+                    }
+                    #warranty {
+                        font-size: 0.8em;
+                        font-weight: 300;
+                        margin-bottom: 0;
+                    }
+                }
+                #reservations:hover {
+	                background-color: rgb(136, 136, 136);
+                    cursor: pointer;
+                }
             }
         }
     }
-    ul.nav.navbar-nav.navbar-center {
-        width: 300px; 
-        line-height: 50px;
-        padding-left: 100px;
+    #packets {
+        height: 500px;
+        .header-common {
+	        font-family: 'Raleway';
+            font-weight: 200;
+        }
+        h1 {
+            margin-top: 50px;
+            font-size: 3em;
+            letter-spacing: 4px;
+        }
+        h2 {
+            font-size: 1em;
+            letter-spacing: 1px;
+            color: rgb(136, 136, 136);
+        }
     }
-    #navigation {
-        font-family: 'Raleway', sans-serif;
-        font-size: 12px;
-        font-weight: 800; 
+    #rooms {
+        height: 350px;
+        .room-container {
+            position: absolute;
+	        background-image: url('../img/3M1A5886a.jpg');
+            background-size: cover;
+            background-position: center bottom;
+            .choose-your-room {
+                position: sticky;
+                left: 200px;
+                margin: 50px 0;
+	            height: 400px;
+                width: 400px;
+                background-color: rgba(0, 0, 0, 0.6);
+                .room-header {
+                    display: inline-block;
+                    margin-left: 50px;
+                    margin-top: 50px;
+                    font-family: 'Raleway';
+                    letter-spacing: 8px;
+                    font-size: 3em;
+                    font-weight: 200;
+                    color: #FFF;
+                }
+                 p {
+                    display: inline-block;
+                    text-align: left;
+                    margin: 20px 50px;
+                    line-height: 25px;
+                    font-family: 'Raleway';
+                    color: #FFF;
+                    font-size: 1em;
+                    font-weight: 200;
+                }
+                a {
+                    margin-left: 50px;
+                    padding: 10px 20px;
+                    border: 1px solid #FFF;
+                    display: inline-block;
+                    font-family: 'Raleway';
+                    font-size: 0.7em;
+                    font-weight: 800;
+                    color: #FFF;
+                    text-decoration: none;
+                    transition: background .5s ease-in-out;
+                    -o-transition: background .5s ease-in-out;
+                    -ms-transition: background .5s ease-in-out;
+                    -moz-transition: background .5s ease-in-out;
+                    -webkit-transition: background .5s ease-in-out;
+                }
+                a:hover {
+                    background-color: rgba(184,184,184, 0.6);
+                }
+            }
+        }
     }
- 
+    #spa {
+        margin-top: 150px;
+        height: 500px;
+        .spa-container {
+            .spa-div {
+                margin-top: 50px;
+	            position: relative;
+                height: 400px;
+                width: 400px;
+                .spa-header {
+                    display: inline-block;
+                    margin-left: 50px;
+                    margin-top: 50px;
+                    font-family: 'Raleway';
+                    letter-spacing: 8px;
+                    font-size: 3em;
+                    font-weight: 200;
+                    color: rgb(43, 33, 32);
+                }
+                p {
+                    color: rgb(136, 136, 136);
+                    display: inline-block;
+                    text-align: left;
+                    margin: 20px 50px;
+                    line-height: 25px;
+                    font-family: 'Raleway';
+                    font-size: 1em;
+                    font-weight: 200;
+                }
+                a {
+                    margin-top: 25px;
+                    margin-left: 50px;
+                    padding: 10px 20px;
+                    border: 1px solid rgb(132, 31, 31);
+                    background-color: rgb(132, 31, 31);
+                    display: inline-block;
+                    font-family: 'Raleway';
+                    font-size: 0.7em;
+                    font-weight: 800;
+                    color: #FFF;
+                    text-decoration: none;
+                    transition: background .5s ease-in-out;
+                    -o-transition: background .5s ease-in-out;
+                    -ms-transition: background .5s ease-in-out;
+                    -moz-transition: background .5s ease-in-out;
+                    -webkit-transition: background .5s ease-in-out;
+                }
+                a:hover {
+                    background-color: rgb(195, 96, 55);
+                    border: 1px solid rgb(195, 96, 55);
+                }
+            }
+        }
+        .slider-one-image {
+            margin-top: 100px;
+            position: relative;
+            width: 250px;
+            height: 400px;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+    }
+    #location {
+        height: 500px;
+        .location-container {
+                position: absolute;
+	            background-image: url('../img/balkon.jpg');
+                background-size: cover;
+                background-position: center center;
+                .location-div {
+                    position: sticky;
+                    left: 200px;
+                    margin: 50px 0;
+	                height: 400px;
+                    width: 500px;
+                    background-color: rgba(0, 0, 0, 0.6);
+                    .location-header {
+                        display: inline-block;
+                        margin-left: 50px;
+                        margin-top: 50px;
+                        font-family: 'Raleway';
+                        letter-spacing: 8px;
+                        font-size: 3em;
+                        font-weight: 200;
+                        color: #FFF;
+                    }
+                     p {
+                        display: inline-block;
+                        text-align: left;
+                        margin: 20px 50px;
+                        line-height: 25px;
+                        font-family: 'Raleway';
+                        color: #FFF;
+                        font-size: 1em;
+                        font-weight: 200;
+                    }
+                    a {
+                        margin-left: 50px;
+                        padding: 10px 20px;
+                        border: 1px solid #FFF;
+                        display: inline-block;
+                        font-family: 'Raleway';
+                        font-size: 0.7em;
+                        font-weight: 800;
+                        color: #FFF;
+                        text-decoration: none;
+                        transition: background .5s ease-in-out;
+                        -o-transition: background .5s ease-in-out;
+                        -ms-transition: background .5s ease-in-out;
+                        -moz-transition: background .5s ease-in-out;
+                        -webkit-transition: background .5s ease-in-out;
+                    }
+                    a:hover {
+                        background-color: rgba(184,184,184, 0.6);
+                }    
+            }
+        }
+    }
+    
+    #conference {
+        margin-top: 150px;
+        height: 500px;
+        .conference-container {
+            margin-top: -100px;
+            .conference-div {
+                margin-top: 50px;
+	            position: relative;
+                height: 400px;
+                width: 400px;
+                .conference-header {
+                    display: inline-block;
+                    margin-left: 50px;
+                    margin-top: 50px;
+                    font-family: 'Raleway';
+                    letter-spacing: 8px;
+                    font-size: 3em;
+                    font-weight: 200;
+                    color: rgb(43, 33, 32);
+                }
+                p {
+                    color: rgb(136, 136, 136);
+                    display: inline-block;
+                    text-align: left;
+                    margin: 20px 50px;
+                    line-height: 25px;
+                    font-family: 'Raleway';
+                    font-size: 1em;
+                    font-weight: 200;
+                }
+                a {
+                    margin-top: 25px;
+                    margin-left: 50px;
+                    padding: 10px 20px;
+                    border: 1px solid rgb(132, 31, 31);
+                    background-color: rgb(132, 31, 31);
+                    display: inline-block;
+                    font-family: 'Raleway';
+                    font-size: 0.7em;
+                    font-weight: 800;
+                    color: #FFF;
+                    text-decoration: none;
+                    transition: background .5s ease-in-out;
+                    -o-transition: background .5s ease-in-out;
+                    -ms-transition: background .5s ease-in-out;
+                    -moz-transition: background .5s ease-in-out;
+                    -webkit-transition: background .5s ease-in-out;
+                }
+                a:hover {
+                    background-color: rgb(195, 96, 55);
+                    border: 1px solid rgb(195, 96, 55);
+                }
+            }
+        }
+        .slider-one-image {
+            margin-top: 100px;
+            position: relative;
+            width: 250px;
+            height: 400px;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+    }
+    
+    #leisure {
+        height: 500px;
+        margin-top: -50px;
+        .leisure-container {
+                position: absolute;
+	            background-image: url('../img/Fotolia_family.jpg');
+                background-size: cover;
+                background-position: bottom right;
+                .leisure-div {
+                    position: sticky;
+                    left: 200px;
+                    margin: 50px 0;
+	                height: 400px;
+                    width: 500px;
+                    background-color: rgba(0, 0, 0, 0.6);
+                    .leisure-header {
+                        display: inline-block;
+                        margin-left: 50px;
+                        margin-top: 50px;
+                        font-family: 'Raleway';
+                        letter-spacing: 8px;
+                        font-size: 3em;
+                        font-weight: 200;
+                        color: #FFF;
+                    }
+                     p {
+                        display: inline-block;
+                        text-align: left;
+                        margin: 20px 50px;
+                        line-height: 25px;
+                        font-family: 'Raleway';
+                        color: #FFF;
+                        font-size: 1em;
+                        font-weight: 200;
+                }
+            }
+        }
+    }
+    #address {
+        .contact{
+            padding-right: 0;
+            padding-left: 0;
+            #contact-1, #contact-2 {
+	            display: block;
+                height: 252.5px;
+            }
+            #contact-1 {
+	            background-image: url('../img/3M1A9234.jpg');
+                background-size: cover;
+                background-position: center center;
+                #inner-contact {
+                    z-index: 2;
+	                height: 100%;
+                    widows: 100%;
+                    background-color: rgba(130, 43, 43, 0.9);
+                    #contact-form-1 {
+                        position: relative;
+                        top: 40px;
+                        left: 40px;
+                        height: 70%;
+                        width: 30%;
+                        padding-left: 35px;
+                        padding-top: 20px;
+                        address {
+                            font-size: 1em;
+                            font-family: 'Raleway';
+                            color: #FFF;
+                            font-weight: 300;
+                        }
+                        h2 {
+                            font-size: 1.2em;
+                            font-family: 'Raleway';
+                            font-weight: 800;
+                            color: #FFF;
+                        }
+                        
+                    }
+                    #contact-form-2 {
+                        padding-top: 15px;
+                        border: 1px solid #FFF;
+                        position: relative;
+                        left: 250px;
+                        bottom: 137px;
+                        height: 70%;
+                        width: 55%;
+                        h2 {
+                            text-align: center;
+                            font-size: 1.7em;
+                            font-family: 'Raleway';
+                            font-weight: 800;
+                            color: #FFF; 
+                            letter-spacing: 3px;
+                        }
+                        p {
+                            text-align: center;
+                            font-size: 1.3em;
+                            font-family: 'Raleway';
+                            font-weight: 300;
+                            color: #FFF; 
+                        }
+                    }
+                }
+            }
+            #contact-2 {
+                height: 247px;
+	            background-color: #000;
+                text-align: center;
+                #discount {
+                    position: relative;
+                    top: 50%;
+                    transform: translateY(-50%);
+                    display: inline-block;
+	                height: 90%;
+                    width: 80%;
+                    h2 {
+                        text-align: center;
+                        font-size: 1.7em;
+                        font-family: 'Raleway';
+                        font-weight: 200;
+                        color: #FFF; 
+                    }
+                    p{
+                        text-align: center;
+                        font-size: 0.8em;
+                        font-family: 'Raleway';
+                        font-weight: 300;
+                        color: #FFF;
+                    }
+                    form{
+                        #mail {
+                            font-family: 'Raleway';
+                            font-size: 1em;
+                            font-weight: 200px;
+                            color: rgb(184, 184, 184);
+                            padding: 7.5px;
+                        }
+                        #send-button {
+                            margin-top: 15px;
+                            margin-left: 0;
+                            border: none;
+                            font-family: 'Raleway';
+                            font-size: 0.7em;
+                            font-weight: 800;
+                            padding: 14px 30px;
+                            background-color: rgb(130, 43, 43);
+                            color: #FFF;
+                            transition: background .5s ease-in-out;
+                            -o-transition: background .5s ease-in-out;
+                            -ms-transition: background .5s ease-in-out;
+                            -moz-transition: background .5s ease-in-out;
+                            -webkit-transition: background .5s ease-in-out;
+                        } 
+                        #send-button:hover {
+	                        background-color: rgb(134, 100, 54);
+                        }
+                        #agreement {
+	                        margin-top: 25px;
+                            margin-right: 5px;
+                        }
+                        #agreement-label {
+	                        font-family: 'Raleway';
+                            line-height: 1em;
+                            vertical-align: middle;
+                            font-size: 1em;
+                            font-weight: 200;
+                            color: #FFF;
+                        }
+                        .nopadding {
+                            padding: 0 !important;
+                            margin: 0 !important;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    footer {
+        address {
+            display: inline-block;
+            padding-top: 10px;
+            margin-left: 30px;
+            font-family: 'Raleway';
+            font-size: 1.3em;
+            font-weight: 200;
+            color: rgb(184, 184, 184);
+        }
+        figure{
+            float: right;
+            border: 1px solid rgb(184, 184, 184);
+            display: inline-block;
+            padding: 5px;
+            margin-right: 15px;
+            transition: background .5s ease-in-out;
+            -o-transition: background .5s ease-in-out;
+            -ms-transition: background .5s ease-in-out;
+            -moz-transition: background .5s ease-in-out;
+            -webkit-transition: background .5s ease-in-out;
+        }
+        figure:hover {
+            cursor: pointer;
+            background-color: rgb(184, 184, 184);
+        }
+        .image {
+            display: inline-block;
+	        width: 30px;
+            height: 30px;
+        }
+        #back-to-top {
+            display: inline-block;
+            float: right;
+            p {
+                padding-top: 15px;
+                margin-right: 10px;
+                display: inline-block;
+                font-family: 'Raleway';
+                font-size: 0.8em;
+                font-weight: 800;
+                color: #000; 
+            }
+            figure {
+                transition: background .5s ease-in-out;
+                -o-transition: background .5s ease-in-out;
+                -ms-transition: background .5s ease-in-out;
+                -moz-transition: background .5s ease-in-out;
+                -webkit-transition: background .5s ease-in-out;
+                background-color: #000;
+                img {
+                    filter: invert(100%);
+                }
+            }
+            figure:hover {
+                background-color: #FFF;
+                img {
+                    filter: invert(0);
+                }
+            }
+        }
+    }
 }
+

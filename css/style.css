@@ -1,38 +1,562 @@
 body {
   margin: 0;
-  height: 100vh; }
-  body .hotel-logo {
-    margin-left: auto;
-    margin-right: auto;
-    width: 280px;
-    display: inline-block;
-    text-align: center;
-    line-height: 50px; }
-  body #bs-example-navbar-collapse-1 a {
-    color: #1a1414; }
-  body ul.nav.navbar-nav.navbar-left {
-    margin-left: -30px; }
-    body ul.nav.navbar-nav.navbar-left li {
+  height: 100%; }
+  body header {
+    height: 530px; }
+    body header .hotel-logo {
+      margin-left: auto;
+      margin-right: auto;
+      width: 280px;
+      display: inline-block;
+      text-align: center;
       line-height: 50px; }
-    body ul.nav.navbar-nav.navbar-left img {
-      height: 40px;
-      padding-right: 10px; }
-    body ul.nav.navbar-nav.navbar-left #square-border {
-      margin-top: 5px;
-      margin-right: 30px;
-      width: 40px;
-      height: 40px;
-      background-image: url("../img/prostokat5.png");
-      background-size: contain;
-      line-height: 40px;
+    body header .nav.navbar-nav.navbar-left #square-border {
+      transition: background .5s ease-in-out;
+      -o-transition: background .5s ease-in-out;
+      -ms-transition: background .5s ease-in-out;
+      -moz-transition: background .5s ease-in-out;
+      -webkit-transition: background .5s ease-in-out; }
+    body header .navbar-default .navbar-nav li a {
+      transition: background .5s ease-in-out;
+      -o-transition: background .5s ease-in-out;
+      -ms-transition: background .5s ease-in-out;
+      -moz-transition: background .5s ease-in-out;
+      -webkit-transition: background .5s ease-in-out; }
+    body header .nav.navbar-nav.navbar-left #square-border:hover {
+      background-color: #d4d8dd; }
+    body header .navbar-default .navbar-nav li a:hover {
+      background-color: #d4d8dd; }
+    body header #bs-example-navbar-collapse-1 a {
+      color: #1a1414; }
+    body header ul.nav.navbar-nav.navbar-left {
+      margin-left: -30px; }
+      body header ul.nav.navbar-nav.navbar-left li {
+        line-height: 50px; }
+      body header ul.nav.navbar-nav.navbar-left li#lang {
+        background-image: url(../img/prostokat5.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: center; }
+      body header ul.nav.navbar-nav.navbar-left img {
+        height: 40px;
+        padding-right: 10px; }
+      body header ul.nav.navbar-nav.navbar-left #square-border {
+        margin-top: 5px;
+        margin-right: 30px;
+        width: 40px;
+        height: 40px;
+        background-image: url("../img/prostokat5.png");
+        background-size: contain;
+        line-height: 40px;
+        text-align: center; }
+        body header ul.nav.navbar-nav.navbar-left #square-border a {
+          text-decoration: none; }
+    body header ul.nav.navbar-nav.navbar-center {
+      width: 300px;
+      line-height: 50px;
+      padding-left: 100px; }
+    body header #navigation {
+      font-family: 'Raleway', sans-serif;
+      font-size: 12px;
+      font-weight: 800; }
+    body header #header-content {
+      position: relative;
+      height: 530px;
+      background-image: url("../img/IMG_5959.png");
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center; }
+      body header #header-content .col-sm-12.col-md-3.col-lg-3 {
+        text-align: center;
+        top: 320px;
+        padding-left: 0; }
+      body header #header-content #hotel-evaluate {
+        position: relative;
+        background-image: url("../img/prostokat12.png");
+        background-size: contain;
+        height: 100px;
+        width: 100px;
+        text-align: center;
+        margin-left: 30px; }
+        body header #header-content #hotel-evaluate .mark {
+          font-family: 'Raleway';
+          background-color: transparent;
+          color: white; }
+        body header #header-content #hotel-evaluate #general-mark {
+          font-weight: 700;
+          font-size: 1.2em;
+          margin-bottom: 0;
+          margin-top: 10px;
+          padding-top: 15px; }
+        body header #header-content #hotel-evaluate #guest-marks {
+          font-weight: 500;
+          font-size: 1em; }
+      body header #header-content .col-sm-12.col-md-6.col-lg-6 {
+        top: 280px; }
+        body header #header-content .col-sm-12.col-md-6.col-lg-6 #trip-advisor {
+          position: relative;
+          text-align: center; }
+          body header #header-content .col-sm-12.col-md-6.col-lg-6 #trip-advisor .advertise-text {
+            color: white;
+            font-family: 'Raleway';
+            text-shadow: 1px 1px 5px #000; }
+          body header #header-content .col-sm-12.col-md-6.col-lg-6 #trip-advisor p#wonderful {
+            font-size: 4.3em;
+            font-weight: 200; }
+          body header #header-content .col-sm-12.col-md-6.col-lg-6 #trip-advisor #trip-opinion {
+            display: inline-block; }
+            body header #header-content .col-sm-12.col-md-6.col-lg-6 #trip-advisor #trip-opinion p#opinion {
+              font-size: 1.6em;
+              font-weight: 200;
+              font-style: italic;
+              padding-right: 30px; }
+            body header #header-content .col-sm-12.col-md-6.col-lg-6 #trip-advisor #trip-opinion figure {
+              display: inline-block;
+              position: relative;
+              left: 250px;
+              bottom: 42px; }
+              body header #header-content .col-sm-12.col-md-6.col-lg-6 #trip-advisor #trip-opinion figure img#owl {
+                width: 33px;
+                height: 33px; }
+      body header #header-content .col-sm-12.col-md-3.col-lg-3.reservations {
+        top: 100px;
+        padding-right: 0; }
+        body header #header-content .col-sm-12.col-md-3.col-lg-3.reservations #reservations {
+          margin-right: 0;
+          background-color: #841f1f;
+          padding: 10px;
+          transition: background .5s ease-in-out;
+          -o-transition: background .5s ease-in-out;
+          -ms-transition: background .5s ease-in-out;
+          -moz-transition: background .5s ease-in-out;
+          -webkit-transition: background .5s ease-in-out; }
+          body header #header-content .col-sm-12.col-md-3.col-lg-3.reservations #reservations .text-uppercase {
+            color: white;
+            font-family: 'Raleway'; }
+          body header #header-content .col-sm-12.col-md-3.col-lg-3.reservations #reservations #prices-and-reservations {
+            font-size: 1.2em;
+            font-weight: 800;
+            margin-bottom: 0;
+            letter-spacing: 1px; }
+          body header #header-content .col-sm-12.col-md-3.col-lg-3.reservations #reservations #warranty {
+            font-size: 0.8em;
+            font-weight: 300;
+            margin-bottom: 0; }
+        body header #header-content .col-sm-12.col-md-3.col-lg-3.reservations #reservations:hover {
+          background-color: #888888;
+          cursor: pointer; }
+  body #packets {
+    height: 500px; }
+    body #packets .header-common {
+      font-family: 'Raleway';
+      font-weight: 200; }
+    body #packets h1 {
+      margin-top: 50px;
+      font-size: 3em;
+      letter-spacing: 4px; }
+    body #packets h2 {
+      font-size: 1em;
+      letter-spacing: 1px;
+      color: #888888; }
+  body #rooms {
+    height: 350px; }
+    body #rooms .room-container {
+      position: absolute;
+      background-image: url("../img/3M1A5886a.jpg");
+      background-size: cover;
+      background-position: center bottom; }
+      body #rooms .room-container .choose-your-room {
+        position: sticky;
+        left: 200px;
+        margin: 50px 0;
+        height: 400px;
+        width: 400px;
+        background-color: rgba(0, 0, 0, 0.6); }
+        body #rooms .room-container .choose-your-room .room-header {
+          display: inline-block;
+          margin-left: 50px;
+          margin-top: 50px;
+          font-family: 'Raleway';
+          letter-spacing: 8px;
+          font-size: 3em;
+          font-weight: 200;
+          color: #FFF; }
+        body #rooms .room-container .choose-your-room p {
+          display: inline-block;
+          text-align: left;
+          margin: 20px 50px;
+          line-height: 25px;
+          font-family: 'Raleway';
+          color: #FFF;
+          font-size: 1em;
+          font-weight: 200; }
+        body #rooms .room-container .choose-your-room a {
+          margin-left: 50px;
+          padding: 10px 20px;
+          border: 1px solid #FFF;
+          display: inline-block;
+          font-family: 'Raleway';
+          font-size: 0.7em;
+          font-weight: 800;
+          color: #FFF;
+          text-decoration: none;
+          transition: background .5s ease-in-out;
+          -o-transition: background .5s ease-in-out;
+          -ms-transition: background .5s ease-in-out;
+          -moz-transition: background .5s ease-in-out;
+          -webkit-transition: background .5s ease-in-out; }
+        body #rooms .room-container .choose-your-room a:hover {
+          background-color: rgba(184, 184, 184, 0.6); }
+  body #spa {
+    margin-top: 150px;
+    height: 500px; }
+    body #spa .spa-container .spa-div {
+      margin-top: 50px;
+      position: relative;
+      height: 400px;
+      width: 400px; }
+      body #spa .spa-container .spa-div .spa-header {
+        display: inline-block;
+        margin-left: 50px;
+        margin-top: 50px;
+        font-family: 'Raleway';
+        letter-spacing: 8px;
+        font-size: 3em;
+        font-weight: 200;
+        color: #2b2120; }
+      body #spa .spa-container .spa-div p {
+        color: #888888;
+        display: inline-block;
+        text-align: left;
+        margin: 20px 50px;
+        line-height: 25px;
+        font-family: 'Raleway';
+        font-size: 1em;
+        font-weight: 200; }
+      body #spa .spa-container .spa-div a {
+        margin-top: 25px;
+        margin-left: 50px;
+        padding: 10px 20px;
+        border: 1px solid #841f1f;
+        background-color: #841f1f;
+        display: inline-block;
+        font-family: 'Raleway';
+        font-size: 0.7em;
+        font-weight: 800;
+        color: #FFF;
+        text-decoration: none;
+        transition: background .5s ease-in-out;
+        -o-transition: background .5s ease-in-out;
+        -ms-transition: background .5s ease-in-out;
+        -moz-transition: background .5s ease-in-out;
+        -webkit-transition: background .5s ease-in-out; }
+      body #spa .spa-container .spa-div a:hover {
+        background-color: #c36037;
+        border: 1px solid #c36037; }
+    body #spa .slider-one-image {
+      margin-top: 100px;
+      position: relative;
+      width: 250px;
+      height: 400px;
+      left: 50%;
+      transform: translateX(-50%); }
+  body #location {
+    height: 500px; }
+    body #location .location-container {
+      position: absolute;
+      background-image: url("../img/balkon.jpg");
+      background-size: cover;
+      background-position: center center; }
+      body #location .location-container .location-div {
+        position: sticky;
+        left: 200px;
+        margin: 50px 0;
+        height: 400px;
+        width: 500px;
+        background-color: rgba(0, 0, 0, 0.6); }
+        body #location .location-container .location-div .location-header {
+          display: inline-block;
+          margin-left: 50px;
+          margin-top: 50px;
+          font-family: 'Raleway';
+          letter-spacing: 8px;
+          font-size: 3em;
+          font-weight: 200;
+          color: #FFF; }
+        body #location .location-container .location-div p {
+          display: inline-block;
+          text-align: left;
+          margin: 20px 50px;
+          line-height: 25px;
+          font-family: 'Raleway';
+          color: #FFF;
+          font-size: 1em;
+          font-weight: 200; }
+        body #location .location-container .location-div a {
+          margin-left: 50px;
+          padding: 10px 20px;
+          border: 1px solid #FFF;
+          display: inline-block;
+          font-family: 'Raleway';
+          font-size: 0.7em;
+          font-weight: 800;
+          color: #FFF;
+          text-decoration: none;
+          transition: background .5s ease-in-out;
+          -o-transition: background .5s ease-in-out;
+          -ms-transition: background .5s ease-in-out;
+          -moz-transition: background .5s ease-in-out;
+          -webkit-transition: background .5s ease-in-out; }
+        body #location .location-container .location-div a:hover {
+          background-color: rgba(184, 184, 184, 0.6); }
+  body #conference {
+    margin-top: 150px;
+    height: 500px; }
+    body #conference .conference-container {
+      margin-top: -100px; }
+      body #conference .conference-container .conference-div {
+        margin-top: 50px;
+        position: relative;
+        height: 400px;
+        width: 400px; }
+        body #conference .conference-container .conference-div .conference-header {
+          display: inline-block;
+          margin-left: 50px;
+          margin-top: 50px;
+          font-family: 'Raleway';
+          letter-spacing: 8px;
+          font-size: 3em;
+          font-weight: 200;
+          color: #2b2120; }
+        body #conference .conference-container .conference-div p {
+          color: #888888;
+          display: inline-block;
+          text-align: left;
+          margin: 20px 50px;
+          line-height: 25px;
+          font-family: 'Raleway';
+          font-size: 1em;
+          font-weight: 200; }
+        body #conference .conference-container .conference-div a {
+          margin-top: 25px;
+          margin-left: 50px;
+          padding: 10px 20px;
+          border: 1px solid #841f1f;
+          background-color: #841f1f;
+          display: inline-block;
+          font-family: 'Raleway';
+          font-size: 0.7em;
+          font-weight: 800;
+          color: #FFF;
+          text-decoration: none;
+          transition: background .5s ease-in-out;
+          -o-transition: background .5s ease-in-out;
+          -ms-transition: background .5s ease-in-out;
+          -moz-transition: background .5s ease-in-out;
+          -webkit-transition: background .5s ease-in-out; }
+        body #conference .conference-container .conference-div a:hover {
+          background-color: #c36037;
+          border: 1px solid #c36037; }
+    body #conference .slider-one-image {
+      margin-top: 100px;
+      position: relative;
+      width: 250px;
+      height: 400px;
+      left: 50%;
+      transform: translateX(-50%); }
+  body #leisure {
+    height: 500px;
+    margin-top: -50px; }
+    body #leisure .leisure-container {
+      position: absolute;
+      background-image: url("../img/Fotolia_family.jpg");
+      background-size: cover;
+      background-position: bottom right; }
+      body #leisure .leisure-container .leisure-div {
+        position: sticky;
+        left: 200px;
+        margin: 50px 0;
+        height: 400px;
+        width: 500px;
+        background-color: rgba(0, 0, 0, 0.6); }
+        body #leisure .leisure-container .leisure-div .leisure-header {
+          display: inline-block;
+          margin-left: 50px;
+          margin-top: 50px;
+          font-family: 'Raleway';
+          letter-spacing: 8px;
+          font-size: 3em;
+          font-weight: 200;
+          color: #FFF; }
+        body #leisure .leisure-container .leisure-div p {
+          display: inline-block;
+          text-align: left;
+          margin: 20px 50px;
+          line-height: 25px;
+          font-family: 'Raleway';
+          color: #FFF;
+          font-size: 1em;
+          font-weight: 200; }
+  body #address .contact {
+    padding-right: 0;
+    padding-left: 0; }
+    body #address .contact #contact-1, body #address .contact #contact-2 {
+      display: block;
+      height: 252.5px; }
+    body #address .contact #contact-1 {
+      background-image: url("../img/3M1A9234.jpg");
+      background-size: cover;
+      background-position: center center; }
+      body #address .contact #contact-1 #inner-contact {
+        z-index: 2;
+        height: 100%;
+        widows: 100%;
+        background-color: rgba(130, 43, 43, 0.9); }
+        body #address .contact #contact-1 #inner-contact #contact-form-1 {
+          position: relative;
+          top: 40px;
+          left: 40px;
+          height: 70%;
+          width: 30%;
+          padding-left: 35px;
+          padding-top: 20px; }
+          body #address .contact #contact-1 #inner-contact #contact-form-1 address {
+            font-size: 1em;
+            font-family: 'Raleway';
+            color: #FFF;
+            font-weight: 300; }
+          body #address .contact #contact-1 #inner-contact #contact-form-1 h2 {
+            font-size: 1.2em;
+            font-family: 'Raleway';
+            font-weight: 800;
+            color: #FFF; }
+        body #address .contact #contact-1 #inner-contact #contact-form-2 {
+          padding-top: 15px;
+          border: 1px solid #FFF;
+          position: relative;
+          left: 250px;
+          bottom: 137px;
+          height: 70%;
+          width: 55%; }
+          body #address .contact #contact-1 #inner-contact #contact-form-2 h2 {
+            text-align: center;
+            font-size: 1.7em;
+            font-family: 'Raleway';
+            font-weight: 800;
+            color: #FFF;
+            letter-spacing: 3px; }
+          body #address .contact #contact-1 #inner-contact #contact-form-2 p {
+            text-align: center;
+            font-size: 1.3em;
+            font-family: 'Raleway';
+            font-weight: 300;
+            color: #FFF; }
+    body #address .contact #contact-2 {
+      height: 247px;
+      background-color: #000;
       text-align: center; }
-      body ul.nav.navbar-nav.navbar-left #square-border a {
-        text-decoration: none; }
-  body ul.nav.navbar-nav.navbar-center {
-    width: 300px;
-    line-height: 50px;
-    padding-left: 100px; }
-  body #navigation {
-    font-family: 'Raleway', sans-serif;
-    font-size: 12px;
-    font-weight: 800; }
+      body #address .contact #contact-2 #discount {
+        position: relative;
+        top: 50%;
+        transform: translateY(-50%);
+        display: inline-block;
+        height: 90%;
+        width: 80%; }
+        body #address .contact #contact-2 #discount h2 {
+          text-align: center;
+          font-size: 1.7em;
+          font-family: 'Raleway';
+          font-weight: 200;
+          color: #FFF; }
+        body #address .contact #contact-2 #discount p {
+          text-align: center;
+          font-size: 0.8em;
+          font-family: 'Raleway';
+          font-weight: 300;
+          color: #FFF; }
+        body #address .contact #contact-2 #discount form #mail {
+          font-family: 'Raleway';
+          font-size: 1em;
+          font-weight: 200px;
+          color: #b8b8b8;
+          padding: 7.5px; }
+        body #address .contact #contact-2 #discount form #send-button {
+          margin-top: 15px;
+          margin-left: 0;
+          border: none;
+          font-family: 'Raleway';
+          font-size: 0.7em;
+          font-weight: 800;
+          padding: 14px 30px;
+          background-color: #822b2b;
+          color: #FFF;
+          transition: background .5s ease-in-out;
+          -o-transition: background .5s ease-in-out;
+          -ms-transition: background .5s ease-in-out;
+          -moz-transition: background .5s ease-in-out;
+          -webkit-transition: background .5s ease-in-out; }
+        body #address .contact #contact-2 #discount form #send-button:hover {
+          background-color: #866436; }
+        body #address .contact #contact-2 #discount form #agreement {
+          margin-top: 25px;
+          margin-right: 5px; }
+        body #address .contact #contact-2 #discount form #agreement-label {
+          font-family: 'Raleway';
+          line-height: 1em;
+          vertical-align: middle;
+          font-size: 1em;
+          font-weight: 200;
+          color: #FFF; }
+        body #address .contact #contact-2 #discount form .nopadding {
+          padding: 0 !important;
+          margin: 0 !important; }
+  body footer address {
+    display: inline-block;
+    padding-top: 10px;
+    margin-left: 30px;
+    font-family: 'Raleway';
+    font-size: 1.3em;
+    font-weight: 200;
+    color: #b8b8b8; }
+  body footer figure {
+    float: right;
+    border: 1px solid #b8b8b8;
+    display: inline-block;
+    padding: 5px;
+    margin-right: 15px;
+    transition: background .5s ease-in-out;
+    -o-transition: background .5s ease-in-out;
+    -ms-transition: background .5s ease-in-out;
+    -moz-transition: background .5s ease-in-out;
+    -webkit-transition: background .5s ease-in-out; }
+  body footer figure:hover {
+    cursor: pointer;
+    background-color: #b8b8b8; }
+  body footer .image {
+    display: inline-block;
+    width: 30px;
+    height: 30px; }
+  body footer #back-to-top {
+    display: inline-block;
+    float: right; }
+    body footer #back-to-top p {
+      padding-top: 15px;
+      margin-right: 10px;
+      display: inline-block;
+      font-family: 'Raleway';
+      font-size: 0.8em;
+      font-weight: 800;
+      color: #000; }
+    body footer #back-to-top figure {
+      transition: background .5s ease-in-out;
+      -o-transition: background .5s ease-in-out;
+      -ms-transition: background .5s ease-in-out;
+      -moz-transition: background .5s ease-in-out;
+      -webkit-transition: background .5s ease-in-out;
+      background-color: #000; }
+      body footer #back-to-top figure img {
+        filter: invert(100%); }
+    body footer #back-to-top figure:hover {
+      background-color: #FFF; }
+      body footer #back-to-top figure:hover img {
+        filter: invert(0); }
