@@ -1,0 +1,64 @@
+
+#slides{
+	position: relative;
+	height: 250px;
+    width: 400px;
+	padding: 0px;
+	margin: 0px;
+	list-style-type: none;
+}
+
+.slide{
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	width: 100%;
+	height: 100%;
+	opacity: 0;
+	z-index: 1;
+
+	-webkit-transition: all 1s;
+	-moz-transition: all 1s;
+	-o-transition: all 1s;
+	transition: all 1s;
+}
+
+#pause {
+    display: inline-block;
+    position: relative;
+    background-color: transparent;
+}
+
+.showing{
+	opacity: 1;
+	z-index: 2;
+}
+
+.slide{
+	font-size: 40px;
+	padding: 40px;
+	box-sizing: border-box;
+	background: #333;
+	color: #fff;
+}
+
+.slide:nth-of-type(1){
+	background-image: url('../img/fotolia.jpg');
+    background-size: cover;
+}
+.slide:nth-of-type(2){
+	background-image: url('../img/fotolia1.jpg');
+    background-size: cover;
+}
+.slide:nth-of-type(3){
+	background-image: url('../img/fotolia2.jpg');
+    background-size: cover;
+}
+.slide:nth-of-type(4){
+	background-image: url('../img/fotolia.jpg');
+    background-size: cover;
+}
+.slide:nth-of-type(5){
+	background-image: url('../img/Fotolia1.jpg');
+    background-size: cover;
+}
